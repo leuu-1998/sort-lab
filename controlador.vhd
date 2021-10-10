@@ -29,6 +29,7 @@ begin
 	process(clock,resetn)
 	begin
 	-- reset asincrono
+	-- reset asincrono 2
 		if (resetn = '1') then
 			state <= S0;
 		end if;
