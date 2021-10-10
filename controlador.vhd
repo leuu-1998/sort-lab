@@ -25,8 +25,10 @@ architecture behav of controlador is
 begin
 -- use the two process model for the FSM
 -- outputs to the datapath should be Moore type to avoid timing issues
+
 	process(clock,resetn)
 	begin
+	-- reset asincrono
 		if (resetn = '1') then
 			state <= S0;
 		end if;
