@@ -20,19 +20,19 @@ architecture behav of datapath is
 	signal R: file_register; 
 -- then, R contains 8 registers, each register has 4 bits
 -- you may need additional signals here
+	variable raddi : integer := 0;
+	variable ci,cj: integer;
 	--registro extra
 	signal R8 : std_logic_vector(3 downto 0);
 begin
 -- since there is no asynchronous reset, only one-process model applies here
 -- be careful how you shows the output signals in the datapath
-	process (clock,i,j,radd,wrinit,control)
-	variable raddi : integer := 0;
-	variable ci,cj: integer;
+	process (clock)
 	begin
 		-- con el cambio del clocl recibimos el nuevo valor en raddi
-		raddi := TO_INTEGER(unsigned(radd));
-		ci := TO_INTEGER(unsigned(i));
-		cj := TO_INTEGER(unsigned(j));
+		raddi := TO_INTEGER(radd);
+		ci := TO_INTEGER(i);
+		cj := TO_INTEGER(j);
 		if (clock'event and clock = '1') then
 -- complete
 ------------------------
@@ -44,12 +44,12 @@ begin
 -- i,j = iteradores para indicar la posicion 
 ------------------------
 			-- en el estado de llenado de datos
-			if (wrinit = '1' and control = "001") then 
+			if (wrinit = '1' and control = '001') then 
 				-- radd 000 -> 111
 				R(raddi) <= datain;
 
 			-- inicia ordenamiento (el fuerte)
-			elsif (control = "100") then 
+			elsif (control = '100') then 
 				--recibimos i y j
 				-- se inicia asignacion
 				-- inicio de algoritmo
@@ -58,7 +58,7 @@ begin
 					R(cj)<=R(ci);
 					R(ci)<=R8;
 				end if;
-			elsif (control = "111") then 
+			elsif (control = '111') then 
 				dataout <= R(raddi);
 			end if;
 
