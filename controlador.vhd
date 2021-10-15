@@ -26,7 +26,7 @@ architecture behav of controlador is
 begin
 -- use the two process model for the FSM
 -- outputs to the datapath should be Moore type to avoid timing issues
-
+	--parte secuencial
 	process(clock,resetn)
 	begin
 	-- reset asincrono
@@ -35,8 +35,6 @@ begin
 			-- cuando se usa el reset cj y ci se reinician en 0
 			cj <= (others => '0');
 			ci <= (others => '0');
-			--control <= "000";
-			--done <='0';
 		elsif (rising_edge(clock) ) then
 			state <= next_state;
 			ci<=ci_n;
@@ -44,7 +42,7 @@ begin
 		end if ;
 	end process;
 
---process 2
+	--parte combinacional
 	process(state,go,ci,cj)
 	begin
 
