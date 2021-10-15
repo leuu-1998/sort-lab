@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sorter
-Thu Oct 14 01:26:40 2021
+Thu Oct 14 19:36:49 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Thu Oct 14 01:26:40 2021           ;
+; Analysis & Synthesis Status ; Failed - Thu Oct 14 19:36:49 2021           ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; sorter                                      ;
 ; Top-level Entity Name       ; sorter                                      ;
@@ -161,68 +161,68 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 14 01:26:31 2021
+    Info: Processing started: Thu Oct 14 19:36:34 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sorter -c sorter
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file sorter.vhd
-    Info (12022): Found design unit 1: sorter-estruct File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/sorter.vhd Line: 18
-    Info (12023): Found entity 1: sorter File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/sorter.vhd Line: 5
+    Info (12022): Found design unit 1: sorter-estruct File: D:/2021-2/Arquitectura/labo2/sort-lab/sorter.vhd Line: 18
+    Info (12023): Found entity 1: sorter File: D:/2021-2/Arquitectura/labo2/sort-lab/sorter.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
-    Info (12022): Found design unit 1: datapath-behav File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/datapath.vhd Line: 18
-    Info (12023): Found entity 1: datapath File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/datapath.vhd Line: 6
+    Info (12022): Found design unit 1: datapath-behav File: D:/2021-2/Arquitectura/labo2/sort-lab/datapath.vhd Line: 18
+    Info (12023): Found entity 1: datapath File: D:/2021-2/Arquitectura/labo2/sort-lab/datapath.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file controlador.vhd
-    Info (12022): Found design unit 1: controlador-behav File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 19
-    Info (12023): Found entity 1: controlador File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 8
+    Info (12022): Found design unit 1: controlador-behav File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 19
+    Info (12023): Found entity 1: controlador File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 8
 Info (12127): Elaborating entity "sorter" for the top level hierarchy
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datos" File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/sorter.vhd Line: 46
-Info (12128): Elaborating entity "controlador" for hierarchy "controlador:control" File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/sorter.vhd Line: 57
-Warning (10631): VHDL Process Statement warning at controlador.vhd(29): inferring latch(es) for signal or variable "cj", which holds its previous value in one or more paths through the process File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Warning (10631): VHDL Process Statement warning at controlador.vhd(29): inferring latch(es) for signal or variable "ci", which holds its previous value in one or more paths through the process File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Warning (10631): VHDL Process Statement warning at controlador.vhd(29): inferring latch(es) for signal or variable "control", which holds its previous value in one or more paths through the process File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Warning (10631): VHDL Process Statement warning at controlador.vhd(29): inferring latch(es) for signal or variable "done", which holds its previous value in one or more paths through the process File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Warning (10631): VHDL Process Statement warning at controlador.vhd(45): inferring latch(es) for signal or variable "ci", which holds its previous value in one or more paths through the process File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Warning (10631): VHDL Process Statement warning at controlador.vhd(45): inferring latch(es) for signal or variable "cj", which holds its previous value in one or more paths through the process File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Warning (10631): VHDL Process Statement warning at controlador.vhd(45): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "next_state.S7" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "next_state.S6" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "next_state.S5" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "next_state.S4" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "next_state.S3" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "next_state.S2" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "next_state.S1" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "next_state.S0" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "cj[0]" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "cj[1]" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "cj[2]" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "ci[0]" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "ci[1]" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "ci[2]" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Info (10041): Inferred latch for "done" at controlador.vhd(29) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Info (10041): Inferred latch for "control[0]" at controlador.vhd(29) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Info (10041): Inferred latch for "control[1]" at controlador.vhd(29) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Info (10041): Inferred latch for "control[2]" at controlador.vhd(29) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Info (10041): Inferred latch for "ci[0]" at controlador.vhd(29) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Info (10041): Inferred latch for "ci[1]" at controlador.vhd(29) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Info (10041): Inferred latch for "ci[2]" at controlador.vhd(29) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Info (10041): Inferred latch for "cj[0]" at controlador.vhd(29) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Info (10041): Inferred latch for "cj[1]" at controlador.vhd(29) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Info (10041): Inferred latch for "cj[2]" at controlador.vhd(29) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Error (10028): Can't resolve multiple constant drivers for net "control[2]" at controlador.vhd(47) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 47
-Error (10029): Constant driver at controlador.vhd(29) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 29
-Error (10028): Can't resolve multiple constant drivers for net "control[1]" at controlador.vhd(47) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 47
-Error (10028): Can't resolve multiple constant drivers for net "control[0]" at controlador.vhd(47) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 47
-Error (10028): Can't resolve multiple constant drivers for net "done" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Error (10028): Can't resolve multiple constant drivers for net "cj[2]" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Error (10028): Can't resolve multiple constant drivers for net "cj[1]" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Error (10028): Can't resolve multiple constant drivers for net "cj[0]" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Error (10028): Can't resolve multiple constant drivers for net "ci[2]" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Error (10028): Can't resolve multiple constant drivers for net "ci[1]" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Error (10028): Can't resolve multiple constant drivers for net "ci[0]" at controlador.vhd(45) File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd Line: 45
-Error (12152): Can't elaborate user hierarchy "controlador:control" File: D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/sorter.vhd Line: 57
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datos" File: D:/2021-2/Arquitectura/labo2/sort-lab/sorter.vhd Line: 46
+Info (12128): Elaborating entity "controlador" for hierarchy "controlador:control" File: D:/2021-2/Arquitectura/labo2/sort-lab/sorter.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at controlador.vhd(29): inferring latch(es) for signal or variable "cj", which holds its previous value in one or more paths through the process File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Warning (10631): VHDL Process Statement warning at controlador.vhd(29): inferring latch(es) for signal or variable "ci", which holds its previous value in one or more paths through the process File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Warning (10631): VHDL Process Statement warning at controlador.vhd(29): inferring latch(es) for signal or variable "control", which holds its previous value in one or more paths through the process File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Warning (10631): VHDL Process Statement warning at controlador.vhd(29): inferring latch(es) for signal or variable "done", which holds its previous value in one or more paths through the process File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Warning (10631): VHDL Process Statement warning at controlador.vhd(47): inferring latch(es) for signal or variable "ci", which holds its previous value in one or more paths through the process File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Warning (10631): VHDL Process Statement warning at controlador.vhd(47): inferring latch(es) for signal or variable "cj", which holds its previous value in one or more paths through the process File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Warning (10631): VHDL Process Statement warning at controlador.vhd(47): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "next_state.S7" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "next_state.S6" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "next_state.S5" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "next_state.S4" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "next_state.S3" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "next_state.S2" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "next_state.S1" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "next_state.S0" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "cj[0]" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "cj[1]" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "cj[2]" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "ci[0]" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "ci[1]" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "ci[2]" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Info (10041): Inferred latch for "done" at controlador.vhd(29) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Info (10041): Inferred latch for "control[0]" at controlador.vhd(29) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Info (10041): Inferred latch for "control[1]" at controlador.vhd(29) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Info (10041): Inferred latch for "control[2]" at controlador.vhd(29) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Info (10041): Inferred latch for "ci[0]" at controlador.vhd(29) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Info (10041): Inferred latch for "ci[1]" at controlador.vhd(29) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Info (10041): Inferred latch for "ci[2]" at controlador.vhd(29) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Info (10041): Inferred latch for "cj[0]" at controlador.vhd(29) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Info (10041): Inferred latch for "cj[1]" at controlador.vhd(29) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Info (10041): Inferred latch for "cj[2]" at controlador.vhd(29) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Error (10028): Can't resolve multiple constant drivers for net "control[2]" at controlador.vhd(49) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 49
+Error (10029): Constant driver at controlador.vhd(29) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 29
+Error (10028): Can't resolve multiple constant drivers for net "control[1]" at controlador.vhd(49) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 49
+Error (10028): Can't resolve multiple constant drivers for net "control[0]" at controlador.vhd(49) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 49
+Error (10028): Can't resolve multiple constant drivers for net "done" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Error (10028): Can't resolve multiple constant drivers for net "cj[2]" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Error (10028): Can't resolve multiple constant drivers for net "cj[1]" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Error (10028): Can't resolve multiple constant drivers for net "cj[0]" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Error (10028): Can't resolve multiple constant drivers for net "ci[2]" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Error (10028): Can't resolve multiple constant drivers for net "ci[1]" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Error (10028): Can't resolve multiple constant drivers for net "ci[0]" at controlador.vhd(47) File: D:/2021-2/Arquitectura/labo2/sort-lab/controlador.vhd Line: 47
+Error (12152): Can't elaborate user hierarchy "controlador:control" File: D:/2021-2/Arquitectura/labo2/sort-lab/sorter.vhd Line: 57
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 12 errors, 7 warnings
     Error: Peak virtual memory: 4836 megabytes
-    Error: Processing ended: Thu Oct 14 01:26:40 2021
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:21
+    Error: Processing ended: Thu Oct 14 19:36:49 2021
+    Error: Elapsed time: 00:00:15
+    Error: Total CPU time (on all processors): 00:00:32
 
 
