@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/2021-2-octavoCiclo/arquitectura-paralela/lab2/simulation/qsim
 Esorter
-Z1 w1634315006
+Z1 w1634316352
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 OGn598C_0mX<WSGfCb?AK2
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 CcdNAEi>PYH4@n><]NQ]V2
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 QZo1Vh6en2ZO3=hNmAfQ>0
@@ -28,9 +28,9 @@ V564_>5z<dck6D=WW@`2^O3
 !s100 Q3hBXm@DFz5nNdEmmQQTV3
 Z13 OV;C;10.5b;63
 32
-Z14 !s110 1634315007
+Z14 !s110 1634316353
 !i10b 1
-Z15 !s108 1634315007.000000
+Z15 !s108 1634316353.000000
 Z16 !s90 -work|work|sorter.vho|
 Z17 !s107 sorter.vho|
 !i113 1
@@ -62,7 +62,7 @@ R17
 R18
 R19
 Esorter_vhd_vec_tst
-Z20 w1634315005
+Z20 w1634316351
 R8
 R9
 R0
@@ -74,29 +74,29 @@ V2RUQ<de9VU^i7JJz4F]S33
 !s100 OSjW4UL1@c<HniQ=@mJ>:2
 R13
 32
-Z23 !s110 1634315008
+R14
 !i10b 1
-Z24 !s108 1634315008.000000
-Z25 !s90 -work|work|Waveform.vwf.vht|
-Z26 !s107 Waveform.vwf.vht|
+R15
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
 !i113 1
 R18
 R19
 Asorter_arch
 R8
 R9
-Z27 DEx4 work 18 sorter_vhd_vec_tst 0 22 2RUQ<de9VU^i7JJz4F]S33
+Z25 DEx4 work 18 sorter_vhd_vec_tst 0 22 2RUQ<de9VU^i7JJz4F]S33
 l56
 L33
-Z28 V7Sd>W^ZfZM]I68H<UUR=C0
-Z29 !s100 GUE4JU4AEe26c8Z=Gc`U=2
+VR0_76AVW:8XoF^?O3POh`3
+!s100 zV80YaCQ0d0W6<WYkP]E81
 R13
 32
-R23
+R14
 !i10b 1
+R15
+R23
 R24
-R25
-R26
 !i113 1
 R18
 R19

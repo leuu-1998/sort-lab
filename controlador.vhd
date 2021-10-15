@@ -48,6 +48,7 @@ begin
 
 		ci_n <= ci;
 		cj_n <= cj;
+		control <= (others => '0'); 
 		next_state <= state;
 		-- control debe tener valor por defecto (otro de los estados ya asignados)
 		case state is
