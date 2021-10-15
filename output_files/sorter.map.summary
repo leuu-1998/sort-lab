@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Oct 14 20:52:12 2021
+Analysis & Synthesis Status : Successful - Thu Oct 14 23:28:54 2021
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : sorter
 Top-level Entity Name : sorter
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 53
+Total registers : 48
 Total pins : 16
 Total virtual pins : 0
 Total block memory bits : 0

@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Oct 14 20:52:55 2021
+Fitter Status : Successful - Thu Oct 14 23:29:33 2021
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : sorter
 Top-level Entity Name : sorter
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 94 / 32,070 ( < 1 % )
-Total registers : 62
+Logic utilization (in ALMs) : 78 / 32,070 ( < 1 % )
+Total registers : 61
 Total pins : 16 / 457 ( 4 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )

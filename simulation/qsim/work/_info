@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/2021-2-octavoCiclo/arquitectura-paralela/lab2/simulation/qsim
 Esorter
-Z1 w1634263286
+Z1 w1634274757
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 OGn598C_0mX<WSGfCb?AK2
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 CcdNAEi>PYH4@n><]NQ]V2
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 QZo1Vh6en2ZO3=hNmAfQ>0
@@ -28,9 +28,9 @@ V564_>5z<dck6D=WW@`2^O3
 !s100 Q3hBXm@DFz5nNdEmmQQTV3
 Z13 OV;C;10.5b;63
 32
-Z14 !s110 1634263287
+Z14 !s110 1634274757
 !i10b 1
-Z15 !s108 1634263287.000000
+Z15 !s108 1634274757.000000
 Z16 !s90 -work|work|sorter.vho|
 Z17 !s107 sorter.vho|
 !i113 1
@@ -47,10 +47,10 @@ R8
 R9
 R10
 DEx4 work 6 sorter 0 22 564_>5z<dck6D=WW@`2^O3
-l480
+l421
 L70
-V1nOg7Nk4:^[?0Y`M4<7e>1
-!s100 C>[hTamAA:1AOIjO=;`zi3
+V8C^T1DoVoP1FU<<Cd[T6b2
+!s100 _Zo[IWlLXYeTCJV<gV[^43
 R13
 32
 R14
@@ -62,7 +62,7 @@ R17
 R18
 R19
 Esorter_vhd_vec_tst
-Z20 w1634263284
+Z20 w1634274755
 R8
 R9
 R0
@@ -88,8 +88,8 @@ R9
 Z25 DEx4 work 18 sorter_vhd_vec_tst 0 22 2RUQ<de9VU^i7JJz4F]S33
 l56
 L33
-Z26 V7Sd>W^ZfZM]I68H<UUR=C0
-Z27 !s100 GUE4JU4AEe26c8Z=Gc`U=2
+V7Sd>W^ZfZM]I68H<UUR=C0
+!s100 GUE4JU4AEe26c8Z=Gc`U=2
 R13
 32
 R14

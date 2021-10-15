@@ -18,7 +18,7 @@ end controlador;
 --  Architecture Body
 architecture behav of controlador is
 -- you may need to define state type signals and other signals
-	type STATE_TYPE is (S0,S1,S2,S3,S4,S5,S7);
+	type STATE_TYPE is (S0,S1,S2,S4,S5,S7);
 	--initial state
 	signal state, next_state : STATE_TYPE;
 	signal cj, ci : unsigned(2 downto 0) := (others => '0'); 
@@ -82,25 +82,30 @@ begin
 				cj_n <= ci;
 				--ci no cambia
 				ci_n <= ci;
-				next_state <= S3;
-			
-			when S3 =>
-				control <= "011";
-				done <= '0';
-				cj_n <= cj + 1;
-				ci_n<= ci;
 				next_state <= S4;
+			
 			when S4 =>
 				control <= "100";
 				done <= '0';
-				ci_n<=ci;
-				cj_n<=cj;
-				--preguntando j para pasar a otro estad
-				if(cj="111") then 
+				cj_n <= cj + 1;
+				ci_n<= ci;
+				--next_state <= S4;
+				if(cj="110")then
 					next_state <= S5;
 				else 
-					next_state <= S3;
+					next_state <= S4;
 				end if;
+			--when S4 =>
+				--control <= "100";
+				--done <= '0';
+				--ci_n<=ci;
+				--cj_n<=cj;
+				--preguntando j para pasar a otro estad
+				--if(cj="111") then 
+				--	next_state <= S5;
+				--else 
+				--	next_state <= S3;
+				--end if;
 			when S5 =>
 				control <= "101";
 				done <= '0';

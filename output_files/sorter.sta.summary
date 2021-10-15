@@ -3,7 +3,7 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'clock'
-Slack : 3.172
+Slack : 3.464
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Setup 'clock_output'
@@ -11,7 +11,7 @@ Slack : 4.011
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'clock'
-Slack : 0.361
+Slack : 0.382
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'clock_output'
@@ -19,7 +19,7 @@ Slack : 7.174
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'clock'
-Slack : 9.020
+Slack : 9.034
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'clock'
@@ -27,11 +27,11 @@ Slack : 0.528
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
-Slack : 5.473
+Slack : 5.472
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'clock'
-Slack : 3.677
+Slack : 4.144
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'clock_output'
@@ -39,7 +39,7 @@ Slack : 4.220
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'clock'
-Slack : 0.377
+Slack : 0.399
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'clock_output'
@@ -47,7 +47,7 @@ Slack : 6.987
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'clock'
-Slack : 6.318
+Slack : 6.316
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'clock'
@@ -59,7 +59,7 @@ Slack : 5.520
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'clock'
-Slack : 5.641
+Slack : 6.335
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'clock_output'
@@ -67,7 +67,7 @@ Slack : 7.303
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'clock'
-Slack : 0.177
+Slack : 0.186
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'clock_output'
@@ -75,7 +75,7 @@ Slack : 4.314
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'clock'
-Slack : 7.459
+Slack : 7.462
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'clock'
@@ -87,7 +87,7 @@ Slack : 5.327
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'clock'
-Slack : 6.331
+Slack : 6.578
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'clock_output'
@@ -95,7 +95,7 @@ Slack : 7.661
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'clock'
-Slack : 0.169
+Slack : 0.176
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'clock_output'
@@ -103,7 +103,7 @@ Slack : 3.960
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'clock'
-Slack : 9.457
+Slack : 9.459
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'clock'
