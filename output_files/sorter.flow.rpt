@@ -1,5 +1,5 @@
 Flow report for sorter
-Fri Oct 15 00:12:37 2021
+Fri Oct 15 11:23:26 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Oct 15 00:12:37 2021       ;
+; Flow Status                     ; Successful - Fri Oct 15 11:23:26 2021       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; sorter                                      ;
 ; Top-level Entity Name           ; sorter                                      ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/14/2021 23:28:43 ;
+; Start date & time ; 10/15/2021 02:01:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; sorter              ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 272737609507323.163427212208476        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 272737609507323.163428128306196        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --         ;
@@ -96,30 +96,19 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4862 MB             ; 00:00:26                           ;
-; Fitter               ; 00:00:38     ; 1.0                     ; 7096 MB             ; 00:01:11                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4825 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.0                     ; 5354 MB             ; 00:00:09                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4855 MB             ; 00:00:20                           ;
+; Fitter               ; 00:00:46     ; 1.0                     ; 7099 MB             ; 00:01:00                           ;
+; Assembler            ; 00:00:11     ; 1.0                     ; 4828 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:12     ; 1.0                     ; 5351 MB             ; 00:00:08                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4705 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4707 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4707 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4717 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4707 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4707 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4707 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
-; Total                ; 00:01:28     ; --                      ; --                  ; 00:02:11                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4707 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4716 MB             ; 00:00:01                           ;
+; Total                ; 00:01:32     ; --                      ; --                  ; 00:01:42                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -132,17 +121,6 @@ refer to the applicable agreement for further details.
 ; Fitter               ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
@@ -166,17 +144,6 @@ quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/ sorter -c sorter
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/ sorter -c sorter
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/ sorter -c sorter
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/ sorter -c sorter
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/WaveformControlador.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/WaveformControlador.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/ sorter -c sorter
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/WaveformControlador.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/WaveformControlador.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/ sorter -c sorter
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/ sorter -c sorter

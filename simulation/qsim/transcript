@@ -1,7 +1,7 @@
 # do sorter.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:12:37 on Oct 15,2021
+# Start time: 11:23:27 on Oct 15,2021
 # vcom -work work sorter.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -15,20 +15,20 @@
 # -- Loading package cyclonev_components
 # -- Compiling entity sorter
 # -- Compiling architecture structure of sorter
-# End time: 00:12:37 on Oct 15,2021, Elapsed time: 0:00:00
+# End time: 11:23:27 on Oct 15,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:12:37 on Oct 15,2021
+# Start time: 11:23:28 on Oct 15,2021
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sorter_vhd_vec_tst
 # -- Compiling architecture sorter_arch of sorter_vhd_vec_tst
-# End time: 00:12:37 on Oct 15,2021, Elapsed time: 0:00:00
+# End time: 11:23:28 on Oct 15,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.sorter_vhd_vec_tst 
-# Start time: 00:12:37 on Oct 15,2021
+# Start time: 11:23:28 on Oct 15,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -50,5 +50,5 @@
 # ** Warning: Design size of 38564 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#34
-# End time: 00:12:38 on Oct 15,2021, Elapsed time: 0:00:01
+# End time: 11:23:28 on Oct 15,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1

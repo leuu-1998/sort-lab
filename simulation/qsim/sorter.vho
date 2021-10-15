@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "10/15/2021 00:12:37"
+-- DATE "10/15/2021 11:23:26"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -279,6 +279,23 @@ SIGNAL \control|state.S7~q\ : std_logic;
 SIGNAL \datos|dataout\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \control|ci\ : std_logic_vector(2 DOWNTO 0);
 SIGNAL \control|cj\ : std_logic_vector(2 DOWNTO 0);
+SIGNAL \datos|ALT_INV_Mux2~2_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux2~1_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux2~0_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux5~2_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux5~1_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux5~0_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux1~2_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux1~1_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux1~0_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux4~2_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux4~1_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux4~0_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_LessThan0~0_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux0~1_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux0~0_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux7~1_combout\ : std_logic;
+SIGNAL \datos|ALT_INV_Mux7~0_combout\ : std_logic;
 SIGNAL \datos|ALT_INV_R[4][0]~1_combout\ : std_logic;
 SIGNAL \datos|ALT_INV_Mux11~3_combout\ : std_logic;
 SIGNAL \datos|ALT_INV_Mux6~2_combout\ : std_logic;
@@ -400,23 +417,6 @@ SIGNAL \datos|ALT_INV_Mux0~2_combout\ : std_logic;
 SIGNAL \datos|ALT_INV_Mux7~2_combout\ : std_logic;
 SIGNAL \datos|ALT_INV_LessThan0~2_combout\ : std_logic;
 SIGNAL \datos|ALT_INV_LessThan0~1_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux2~2_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux2~1_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux2~0_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux5~2_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux5~1_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux5~0_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux1~2_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux1~1_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux1~0_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux4~2_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux4~1_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux4~0_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_LessThan0~0_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux0~1_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux0~0_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux7~1_combout\ : std_logic;
-SIGNAL \datos|ALT_INV_Mux7~0_combout\ : std_logic;
 
 BEGIN
 
@@ -431,6 +431,23 @@ done <= ww_done;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
+\datos|ALT_INV_Mux2~2_combout\ <= NOT \datos|Mux2~2_combout\;
+\datos|ALT_INV_Mux2~1_combout\ <= NOT \datos|Mux2~1_combout\;
+\datos|ALT_INV_Mux2~0_combout\ <= NOT \datos|Mux2~0_combout\;
+\datos|ALT_INV_Mux5~2_combout\ <= NOT \datos|Mux5~2_combout\;
+\datos|ALT_INV_Mux5~1_combout\ <= NOT \datos|Mux5~1_combout\;
+\datos|ALT_INV_Mux5~0_combout\ <= NOT \datos|Mux5~0_combout\;
+\datos|ALT_INV_Mux1~2_combout\ <= NOT \datos|Mux1~2_combout\;
+\datos|ALT_INV_Mux1~1_combout\ <= NOT \datos|Mux1~1_combout\;
+\datos|ALT_INV_Mux1~0_combout\ <= NOT \datos|Mux1~0_combout\;
+\datos|ALT_INV_Mux4~2_combout\ <= NOT \datos|Mux4~2_combout\;
+\datos|ALT_INV_Mux4~1_combout\ <= NOT \datos|Mux4~1_combout\;
+\datos|ALT_INV_Mux4~0_combout\ <= NOT \datos|Mux4~0_combout\;
+\datos|ALT_INV_LessThan0~0_combout\ <= NOT \datos|LessThan0~0_combout\;
+\datos|ALT_INV_Mux0~1_combout\ <= NOT \datos|Mux0~1_combout\;
+\datos|ALT_INV_Mux0~0_combout\ <= NOT \datos|Mux0~0_combout\;
+\datos|ALT_INV_Mux7~1_combout\ <= NOT \datos|Mux7~1_combout\;
+\datos|ALT_INV_Mux7~0_combout\ <= NOT \datos|Mux7~0_combout\;
 \datos|ALT_INV_R[4][0]~1_combout\ <= NOT \datos|R[4][0]~1_combout\;
 \datos|ALT_INV_Mux11~3_combout\ <= NOT \datos|Mux11~3_combout\;
 \datos|ALT_INV_Mux6~2_combout\ <= NOT \datos|Mux6~2_combout\;
@@ -556,23 +573,6 @@ ww_devpor <= devpor;
 \datos|ALT_INV_Mux7~2_combout\ <= NOT \datos|Mux7~2_combout\;
 \datos|ALT_INV_LessThan0~2_combout\ <= NOT \datos|LessThan0~2_combout\;
 \datos|ALT_INV_LessThan0~1_combout\ <= NOT \datos|LessThan0~1_combout\;
-\datos|ALT_INV_Mux2~2_combout\ <= NOT \datos|Mux2~2_combout\;
-\datos|ALT_INV_Mux2~1_combout\ <= NOT \datos|Mux2~1_combout\;
-\datos|ALT_INV_Mux2~0_combout\ <= NOT \datos|Mux2~0_combout\;
-\datos|ALT_INV_Mux5~2_combout\ <= NOT \datos|Mux5~2_combout\;
-\datos|ALT_INV_Mux5~1_combout\ <= NOT \datos|Mux5~1_combout\;
-\datos|ALT_INV_Mux5~0_combout\ <= NOT \datos|Mux5~0_combout\;
-\datos|ALT_INV_Mux1~2_combout\ <= NOT \datos|Mux1~2_combout\;
-\datos|ALT_INV_Mux1~1_combout\ <= NOT \datos|Mux1~1_combout\;
-\datos|ALT_INV_Mux1~0_combout\ <= NOT \datos|Mux1~0_combout\;
-\datos|ALT_INV_Mux4~2_combout\ <= NOT \datos|Mux4~2_combout\;
-\datos|ALT_INV_Mux4~1_combout\ <= NOT \datos|Mux4~1_combout\;
-\datos|ALT_INV_Mux4~0_combout\ <= NOT \datos|Mux4~0_combout\;
-\datos|ALT_INV_LessThan0~0_combout\ <= NOT \datos|LessThan0~0_combout\;
-\datos|ALT_INV_Mux0~1_combout\ <= NOT \datos|Mux0~1_combout\;
-\datos|ALT_INV_Mux0~0_combout\ <= NOT \datos|Mux0~0_combout\;
-\datos|ALT_INV_Mux7~1_combout\ <= NOT \datos|Mux7~1_combout\;
-\datos|ALT_INV_Mux7~0_combout\ <= NOT \datos|Mux7~0_combout\;
 
 -- Location: IOOBUF_X52_Y0_N2
 \dataout[0]~output\ : cyclonev_io_obuf

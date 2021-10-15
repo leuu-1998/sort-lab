@@ -25,8 +25,10 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri Oct 15 00:12:34 2021
+    Info: Processing started: Fri Oct 15 11:23:23 2021
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht
+
+ind port "datapath:datos|R[4][0]" in design
 
 Completed successfully. 
 
@@ -50,13 +52,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri Oct 15 00:12:35 2021
+    Info: Processing started: Fri Oct 15 11:23:25 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/ sorter -c sorter
 Info (204019): Generated file sorter.vho in folder "D:/2021-2-octavoCiclo/arquitectura-paralela/Lab2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4716 megabytes
-    Info: Processing ended: Fri Oct 15 00:12:37 2021
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Fri Oct 15 11:23:26 2021
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -73,14 +75,13 @@ C:/intelFPGA/18.1/modelsim_ase/win32aloem/vsim -c -do sorter.do
 
 Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
-
 # 10.5b
 
 # do sorter.do
-# ** Warning: (vlib-34) Library already exists at "work".
 
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:12:37 on Oct 15,2021
+# Start time: 11:23:27 on Oct 15,2021
 # vcom -work work sorter.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -89,27 +90,28 @@ Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package VITAL_Primitives
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
+
 # -- Loading package altera_lnsim_components
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
 # -- Compiling entity sorter
 # -- Compiling architecture structure of sorter
-# End time: 00:12:37 on Oct 15,2021, Elapsed time: 0:00:00
+# End time: 11:23:27 on Oct 15,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:12:37 on Oct 15,2021
+# Start time: 11:23:28 on Oct 15,2021
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sorter_vhd_vec_tst
 # -- Compiling architecture sorter_arch of sorter_vhd_vec_tst
-# End time: 00:12:37 on Oct 15,2021, Elapsed time: 0:00:00
+# End time: 11:23:28 on Oct 15,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.sorter_vhd_vec_tst 
-# Start time: 00:12:37 on Oct 15,2021
+# Start time: 11:23:28 on Oct 15,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -132,7 +134,7 @@ Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # Expect performance to be adversely affected.
 # after#34
 
-# End time: 00:12:38 on Oct 15,2021, Elapsed time: 0:00:01
+# End time: 11:23:28 on Oct 15,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -145,9 +147,15 @@ Reading D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/simulation/qsim/sorter.
 
 Processing channel transitions... 
 
-Warning: controlador:control|state.S3 - signal not found in VCD.
+Warning: datapath:datos|dataout[3] - signal not found in VCD.
 
-Writing the resulting VWF to D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/simulation/qsim/sorter_20211015001238.sim.vwf
+Warning: datapath:datos|dataout[2] - signal not found in VCD.
+
+Warning: datapath:datos|dataout[1] - signal not found in VCD.
+
+Warning: datapath:datos|dataout[0] - signal not found in VCD.
+
+Writing the resulting VWF to D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/simulation/qsim/sorter_20211015112328.sim.vwf
 
 Finished VCD to VWF conversion.
 

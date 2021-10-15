@@ -22,15 +22,11 @@ architecture behav of datapath is
 -- you may need additional signals here
 	--registro extra
 	signal R8 : std_logic_vector(3 downto 0);
-
-	
 begin
-
-
 -- since there is no asynchronous reset, only one-process model applies here
 -- be careful how you shows the output signals in the datapath
 	process (clock,i,j,radd,wrinit,control,R)
-	
+
 	variable raddi : integer := 0;
 	variable ci,cj: integer;
 
@@ -39,29 +35,16 @@ begin
 	ci := TO_INTEGER(unsigned(i));
 	cj := TO_INTEGER(unsigned(j));
 	R8 <= R(cj);
-		-- con el cambio del clocl recibimos el nuevo valor en raddi
 
 		if (clock'event and clock = '1') then
--- complete
-------------------------
--- sube un clock => se llena registros 
--- wrinit = da la orden de que se escriban datos (1=> si)
--- radd = indica donde llenar o leer los datos 
--- control = indica que hará el datapath
--- datain = el dato de entrada
--- i,j = iteradores para indicar la posicion 
-------------------------
 			-- en el estado de llenado de datos
 			if (wrinit = '1' and control = "001") then 
 				-- radd 000 -> 111
 				R(raddi) <= datain;
 
-			-- inicia ordenamiento (el fuerte)
+			-- inicia ordenamiento
 			elsif (control = "100") then 
-				--recibimos i y j
-				-- se inicia asignacion
 				-- inicio de algoritmo
-				
 				if( R(cj) < R(ci)) then 
 					R(cj)<=R(ci);
 					R(ci)<=R8;

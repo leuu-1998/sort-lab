@@ -1,4 +1,4 @@
---se implementa la maquina de estados FSM-D
+-- se implementa la maquina de estados FSM-D
 -- estados inicial de reset S0 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -35,8 +35,6 @@ begin
 			-- cuando se usa el reset cj y ci se reinician en 0
 			cj <= (others => '0');
 			ci <= (others => '0');
-			--control <= "000";
-			--done <='0';
 		elsif (rising_edge(clock) ) then
 			state <= next_state;
 			ci<=ci_n;
@@ -51,7 +49,7 @@ begin
 		ci_n <= ci;
 		cj_n <= cj;
 		next_state <= state;
-		
+		-- control debe tener valor por defecto (otro de los estados ya asignados)
 		case state is
 			when S0 =>
 				control <= (others => '0'); 
@@ -78,9 +76,7 @@ begin
 			when S2 =>
 				control <= "010";
 				done <= '0';
-				-- acciones
 				cj_n <= ci;
-				--ci no cambia
 				ci_n <= ci;
 				next_state <= S4;
 			
@@ -89,29 +85,18 @@ begin
 				done <= '0';
 				cj_n <= cj + 1;
 				ci_n<= ci;
-				--next_state <= S4;
 				if(cj="110")then
 					next_state <= S5;
 				else 
 					next_state <= S4;
 				end if;
-			--when S4 =>
-				--control <= "100";
-				--done <= '0';
-				--ci_n<=ci;
-				--cj_n<=cj;
-				--preguntando j para pasar a otro estad
-				--if(cj="111") then 
-				--	next_state <= S5;
-				--else 
-				--	next_state <= S3;
-				--end if;
+
 			when S5 =>
 				control <= "101";
 				done <= '0';
 				ci_n<=ci + 1;
 				cj_n<=cj;
-				--preguntamos para i
+				--preguntamos si llegamos al tope de i
 				if(ci = "110") then 
 					next_state <= S7;
 				else
@@ -126,10 +111,6 @@ begin
 				next_state <= S7;
 				
 		end case;
-		-- aqui se agregan los outputs
-		-- i , j , done
-		-- i , j = 0 , S0 , S1 , S7
-		-- cj, ci
 		end process;
 		-- se asigna las señales internas a las salidas i, j
 		i <= std_logic_vector(ci_n);

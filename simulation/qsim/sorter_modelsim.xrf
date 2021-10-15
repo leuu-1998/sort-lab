@@ -4,6 +4,7 @@ source_file = 1, D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/sorter.vhd
 source_file = 1, D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/datapath.vhd
 source_file = 1, D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/controlador.vhd
 source_file = 1, D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/Waveform.vwf
+source_file = 1, WaveformControlador.vwf
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
