@@ -22,17 +22,25 @@ architecture behav of datapath is
 -- you may need additional signals here
 	--registro extra
 	signal R8 : std_logic_vector(3 downto 0);
+
+	
 begin
+
+
 -- since there is no asynchronous reset, only one-process model applies here
 -- be careful how you shows the output signals in the datapath
-	process (clock,i,j,radd,wrinit,control)
+	process (clock,i,j,radd,wrinit,control,R)
+	
 	variable raddi : integer := 0;
 	variable ci,cj: integer;
+
 	begin
+	raddi := TO_INTEGER(unsigned(radd));
+	ci := TO_INTEGER(unsigned(i));
+	cj := TO_INTEGER(unsigned(j));
+	R8 <= R(cj);
 		-- con el cambio del clocl recibimos el nuevo valor en raddi
-		raddi := TO_INTEGER(unsigned(radd));
-		ci := TO_INTEGER(unsigned(i));
-		cj := TO_INTEGER(unsigned(j));
+
 		if (clock'event and clock = '1') then
 -- complete
 ------------------------
@@ -53,7 +61,7 @@ begin
 				--recibimos i y j
 				-- se inicia asignacion
 				-- inicio de algoritmo
-				R8 <= R(cj);
+				
 				if( R(cj) < R(ci)) then 
 					R(cj)<=R(ci);
 					R(ci)<=R8;
