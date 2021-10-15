@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source="C:/Amoralesv/FIEE/EE-681/Years/2021-2/Labs/Lab2/Sorter/Waveform.vwf" --testbench_file="C:/Amoralesv/FIEE/EE-681/Years/2021-2/Labs/Lab2/Sorter/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source="C:/Amoralesv/FIEE/EE-681/Years/2021-2/Labs/Lab2/Sorter/Waveform.vwf" --testbench_file="C:/Amoralesv/FIEE/EE-681/Years/2021-2/Labs/Lab2/Sorter/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Amoralesv/FIEE/EE-681/Years/2021-2/Labs/Lab2/Sorter/simulation/qsim/" sorter -c sorter</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Amoralesv/FIEE/EE-681/Years/2021-2/Labs/Lab2/Sorter/simulation/qsim/" sorter -c sorter</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source="D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf" --testbench_file="D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source="D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf" --testbench_file="D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/" sorter -c sorter</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/" sorter -c sorter</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work sorter.vho
@@ -20,6 +20,8 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
+
 
 
 </modelsim_script>
@@ -40,6 +42,8 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
+
 
 
 </modelsim_script_timing>
@@ -67,7 +71,6 @@ Intel and sold by Intel or its authorized distributors.  Please
 refer to the applicable agreement for further details.
 */
 
-/*comentario prueba*/
 HEADER
 {
 	VERSION = 1;
@@ -268,6 +271,76 @@ SIGNAL("dataout[0]")
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
 	PARENT = "dataout";
+}
+
+SIGNAL("controlador:control|state.S0")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "";
+}
+
+SIGNAL("controlador:control|state.S1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "";
+}
+
+SIGNAL("controlador:control|state.S2")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "";
+}
+
+SIGNAL("controlador:control|state.S3")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "";
+}
+
+SIGNAL("controlador:control|state.S4")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "";
+}
+
+SIGNAL("controlador:control|state.S5")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "";
+}
+
+SIGNAL("controlador:control|state.S7")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "";
 }
 
 TRANSITION_LIST("resetn")
@@ -480,6 +553,69 @@ TRANSITION_LIST("dataout[0]")
 	}
 }
 
+TRANSITION_LIST("controlador:control|state.S0")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1500.0;
+	}
+}
+
+TRANSITION_LIST("controlador:control|state.S1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1500.0;
+	}
+}
+
+TRANSITION_LIST("controlador:control|state.S2")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1500.0;
+	}
+}
+
+TRANSITION_LIST("controlador:control|state.S3")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1500.0;
+	}
+}
+
+TRANSITION_LIST("controlador:control|state.S4")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1500.0;
+	}
+}
+
+TRANSITION_LIST("controlador:control|state.S5")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1500.0;
+	}
+}
+
+TRANSITION_LIST("controlador:control|state.S7")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 1500.0;
+	}
+}
+
 DISPLAY_LINE
 {
 	CHANNEL = "resetn";
@@ -662,6 +798,69 @@ DISPLAY_LINE
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "controlador:control|state.S0";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 19;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "controlador:control|state.S1";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 20;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "controlador:control|state.S2";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 21;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "controlador:control|state.S3";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 22;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "controlador:control|state.S4";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 23;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "controlador:control|state.S5";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 24;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "controlador:control|state.S7";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 25;
 	TREE_LEVEL = 0;
 }
 

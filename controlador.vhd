@@ -30,7 +30,7 @@ begin
 	process(clock,resetn)
 	begin
 	-- reset asincrono
-		if (resetn = '1') then
+		if (resetn = '0') then
 			state <= S0;
 			-- cuando se usa el reset cj y ci se reinician en 0
 			cj <= (others => '0');

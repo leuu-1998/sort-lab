@@ -1,5 +1,5 @@
 Flow report for sorter
-Thu Oct 14 19:36:49 2021
+Thu Oct 14 21:01:26 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,24 +37,29 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Thu Oct 14 19:36:49 2021      ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; sorter                                      ;
-; Top-level Entity Name       ; sorter                                      ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CSEMA5F31C6                                ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Thu Oct 14 21:01:26 2021       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; sorter                                      ;
+; Top-level Entity Name           ; sorter                                      ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSEMA5F31C6                                ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 94 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 62                                          ;
+; Total pins                      ; 16 / 457 ( 4 % )                            ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -62,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/14/2021 19:36:35 ;
+; Start date & time ; 10/14/2021 20:52:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; sorter              ;
 +-------------------+---------------------+
@@ -73,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 9447194436325.163425819522416          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 272737609507323.163426272106620        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --         ;
@@ -91,8 +96,18 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4836 MB             ; 00:00:32                           ;
-; Total                ; 00:00:15     ; --                      ; --                  ; 00:00:32                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4861 MB             ; 00:00:24                           ;
+; Fitter               ; 00:00:40     ; 1.0                     ; 7098 MB             ; 00:01:16                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4830 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:11     ; 1.0                     ; 5355 MB             ; 00:00:09                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4709 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4709 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4717 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4717 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4717 MB             ; 00:00:01                           ;
+; Total                ; 00:01:18     ; --                      ; --                  ; 00:02:02                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -101,7 +116,17 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; LAPTOP-7F7VV8L0  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-GK8R69LK  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -109,6 +134,16 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off sorter -c sorter
+quartus_fit --read_settings_files=off --write_settings_files=off sorter -c sorter
+quartus_asm --read_settings_files=off --write_settings_files=off sorter -c sorter
+quartus_sta sorter -c sorter
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Sorter/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Sorter/simulation/qsim/Waveform.vwf.vht
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/ sorter -c sorter
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/ sorter -c sorter
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/ sorter -c sorter
 
 
 
