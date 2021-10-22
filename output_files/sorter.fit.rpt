@@ -1,5 +1,5 @@
 Fitter report for sorter
-Fri Oct 15 11:42:49 2021
+Fri Oct 22 10:14:11 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Fri Oct 15 11:42:49 2021       ;
+; Fitter Status                   ; Successful - Fri Oct 22 10:14:11 2021       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; sorter                                      ;
 ; Top-level Entity Name           ; sorter                                      ;
@@ -153,14 +153,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.06        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.4%      ;
-;     Processor 3            ;   0.4%      ;
-;     Processor 4            ;   0.4%      ;
+;     Processor 2            ;   1.9%      ;
+;     Processor 3            ;   1.9%      ;
+;     Processor 4            ;   1.9%      ;
 +----------------------------+-------------+
 
 
@@ -1882,32 +1882,32 @@ Info (332111): Found 3 clocks
 Info (176235): Finished register packing
     Extra Info (176218): Packed 5 registers into blocks of type I/O output buffer
     Extra Info (176220): Created 1 register duplicates
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:15
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:17
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:03
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X0_Y0 to location X10_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.45 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
+Info (11888): Total time spent on timing analysis during the Fitter is 0.51 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
 Info (144001): Generated suppressed messages file D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/output_files/sorter.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 7099 megabytes
-    Info: Processing ended: Fri Oct 15 11:42:50 2021
-    Info: Elapsed time: 00:00:49
-    Info: Total CPU time (on all processors): 00:01:05
+    Info: Peak virtual memory: 7094 megabytes
+    Info: Processing ended: Fri Oct 22 10:14:12 2021
+    Info: Elapsed time: 00:00:59
+    Info: Total CPU time (on all processors): 00:01:02
 
 
 +----------------------------+

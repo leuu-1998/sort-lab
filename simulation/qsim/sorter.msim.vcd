@@ -3,7 +3,7 @@ $comment
 		vcd file sorter.msim.vcd -direction
 $end
 $date
-	Fri Oct 15 11:45:53 2021
+	Sat Oct 16 11:05:30 2021
 $end
 $version
 	ModelSim Version 10.5b
