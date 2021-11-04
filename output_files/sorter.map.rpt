@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sorter
-Fri Oct 22 10:13:11 2021
+Wed Nov 03 22:03:52 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 22 10:13:11 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 03 22:03:52 2021       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; sorter                                      ;
 ; Top-level Entity Name           ; sorter                                      ;
@@ -180,31 +180,31 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 93          ;
-;                                             ;             ;
-; Combinational ALUT usage for logic          ; 127         ;
-;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 59          ;
-;     -- 5 input functions                    ; 38          ;
-;     -- 4 input functions                    ; 11          ;
-;     -- <=3 input functions                  ; 19          ;
-;                                             ;             ;
-; Dedicated logic registers                   ; 48          ;
-;                                             ;             ;
-; I/O pins                                    ; 16          ;
-;                                             ;             ;
-; Total DSP Blocks                            ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 48          ;
-; Total fan-out                               ; 805         ;
-; Average fan-out                             ; 3.89        ;
-+---------------------------------------------+-------------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimate of Logic utilization (ALMs needed) ; 146          ;
+;                                             ;              ;
+; Combinational ALUT usage for logic          ; 193          ;
+;     -- 7 input functions                    ; 1            ;
+;     -- 6 input functions                    ; 98           ;
+;     -- 5 input functions                    ; 7            ;
+;     -- 4 input functions                    ; 77           ;
+;     -- <=3 input functions                  ; 10           ;
+;                                             ;              ;
+; Dedicated logic registers                   ; 48           ;
+;                                             ;              ;
+; I/O pins                                    ; 16           ;
+;                                             ;              ;
+; Total DSP Blocks                            ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; wrinit~input ;
+; Maximum fan-out                             ; 50           ;
+; Total fan-out                               ; 1130         ;
+; Average fan-out                             ; 4.14         ;
++---------------------------------------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -212,9 +212,9 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------+-------------+--------------+
-; |sorter                    ; 127 (0)             ; 48 (0)                    ; 0                 ; 0          ; 16   ; 0            ; |sorter                     ; sorter      ; work         ;
-;    |controlador:control|   ; 14 (14)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |sorter|controlador:control ; controlador ; work         ;
-;    |datapath:datos|        ; 113 (113)           ; 36 (36)                   ; 0                 ; 0          ; 0    ; 0            ; |sorter|datapath:datos      ; datapath    ; work         ;
+; |sorter                    ; 193 (0)             ; 48 (0)                    ; 0                 ; 0          ; 16   ; 0            ; |sorter                     ; sorter      ; work         ;
+;    |controlador:control|   ; 16 (16)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |sorter|controlador:control ; controlador ; work         ;
+;    |datapath:datos|        ; 177 (177)           ; 36 (36)                   ; 0                 ; 0          ; 0    ; 0            ; |sorter|datapath:datos      ; datapath    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -254,15 +254,15 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |sorter|datapath:datos|dataout[0]     ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|R[7][0]        ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|R[7][3]        ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|R[6][2]        ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|R[5][0]        ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|R[4][0]        ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|R[3][0]        ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|R[5][3]        ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|R[4][3]        ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|R[3][3]        ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|R[2][3]        ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|R[1][0]        ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|R[0][1]        ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|R[0][0]        ;
+; 12:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; Yes        ; |sorter|datapath:datos|dataout[3]     ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |sorter|datapath:datos|Mux6           ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |sorter|datapath:datos|Mux3           ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |sorter|controlador:control|Selector3 ;
@@ -277,17 +277,19 @@ Encoding Type:  One-Hot
 ; arriav_ff             ; 48                          ;
 ;     CLR               ; 12                          ;
 ;     ENA               ; 36                          ;
-; arriav_lcell_comb     ; 127                         ;
-;     normal            ; 127                         ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 14                          ;
-;         4 data inputs ; 11                          ;
-;         5 data inputs ; 38                          ;
-;         6 data inputs ; 59                          ;
+; arriav_lcell_comb     ; 193                         ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 192                         ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 77                          ;
+;         5 data inputs ; 7                           ;
+;         6 data inputs ; 98                          ;
 ; boundary_port         ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.64                        ;
+; Average LUT depth     ; 3.67                        ;
 +-----------------------+-----------------------------+
 
 
@@ -296,7 +298,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -306,7 +308,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Oct 22 10:12:54 2021
+    Info: Processing started: Wed Nov 03 22:03:41 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sorter -c sorter
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file sorter.vhd
@@ -324,14 +326,14 @@ Info (12128): Elaborating entity "controlador" for hierarchy "controlador:contro
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 149 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 215 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 133 logic cells
+    Info (21061): Implemented 199 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4854 megabytes
-    Info: Processing ended: Fri Oct 22 10:13:11 2021
-    Info: Elapsed time: 00:00:17
+    Info: Peak virtual memory: 4850 megabytes
+    Info: Processing ended: Wed Nov 03 22:03:52 2021
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:22
 
 

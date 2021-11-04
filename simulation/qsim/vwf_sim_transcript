@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sat Oct 16 11:05:08 2021
+    Info: Processing started: Wed Nov 03 22:08:27 2021
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off sorter -c sorter --vector_source=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/Waveform.vwf --testbench_file=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/Waveform.vwf.vht
 
 ath:datos|R[5][0]" in design
@@ -52,13 +52,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sat Oct 16 11:05:14 2021
+    Info: Processing started: Wed Nov 03 22:08:29 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:\2021-2-octavoCiclo\arquitectura-paralela/Lab2/simulation/qsim/ sorter -c sorter
 Info (204019): Generated file sorter.vho in folder "D:/2021-2-octavoCiclo/arquitectura-paralela/Lab2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4716 megabytes
-    Info: Processing ended: Sat Oct 16 11:05:17 2021
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 4715 megabytes
+    Info: Processing ended: Wed Nov 03 22:08:30 2021
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -75,50 +75,43 @@ C:/intelFPGA/18.1/modelsim_ase/win32aloem/vsim -c -do sorter.do
 
 Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
-
 # 10.5b
 
 
 # do sorter.do
-
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:05:24 on Oct 16,2021
+# Start time: 22:08:31 on Nov 03,2021
 # vcom -work work sorter.vho 
-
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
+
 # -- Loading package VITAL_Primitives
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
-
 # -- Loading package altera_lnsim_components
-
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
 # -- Compiling entity sorter
 # -- Compiling architecture structure of sorter
-
-# End time: 11:05:26 on Oct 16,2021, Elapsed time: 0:00:02
+# End time: 22:08:31 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:05:26 on Oct 16,2021
+# Start time: 22:08:31 on Nov 03,2021
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sorter_vhd_vec_tst
 # -- Compiling architecture sorter_arch of sorter_vhd_vec_tst
-# End time: 11:05:26 on Oct 16,2021, Elapsed time: 0:00:00
+# End time: 22:08:31 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.sorter_vhd_vec_tst 
-# Start time: 11:05:28 on Oct 16,2021
+# Start time: 22:08:31 on Nov 03,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -135,13 +128,13 @@ Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_clkena(behavior)
-# Loading altera.dffeas(vital_dffeas)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# ** Warning: Design size of 38560 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Loading altera.dffeas(vital_dffeas)
+# ** Warning: Design size of 50564 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#34
 
-# End time: 11:05:30 on Oct 16,2021, Elapsed time: 0:00:02
+# End time: 22:08:31 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -154,7 +147,7 @@ Reading D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/simulation/qsim/sorter.
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/simulation/qsim/sorter_20211016110530.sim.vwf
+Writing the resulting VWF to D:/2021-2-octavoCiclo/arquitectura-paralela/lab2/simulation/qsim/sorter_20211103220832.sim.vwf
 
 Finished VCD to VWF conversion.
 

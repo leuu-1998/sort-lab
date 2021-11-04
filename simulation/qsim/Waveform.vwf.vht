@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/16/2021 11:05:13"
+-- Generated on "11/03/2021 22:08:28"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          sorter
 -- 
@@ -181,13 +181,9 @@ END PROCESS t_prcs_radd_0;
 t_prcs_datain_3: PROCESS
 BEGIN
 	datain(3) <= '0';
-	WAIT FOR 70000 ps;
+	WAIT FOR 38000 ps;
 	datain(3) <= '1';
-	WAIT FOR 12000 ps;
-	datain(3) <= '0';
-	WAIT FOR 36000 ps;
-	datain(3) <= '1';
-	WAIT FOR 12000 ps;
+	WAIT FOR 44000 ps;
 	datain(3) <= '0';
 WAIT;
 END PROCESS t_prcs_datain_3;
@@ -197,15 +193,11 @@ BEGIN
 	datain(2) <= '0';
 	WAIT FOR 38000 ps;
 	datain(2) <= '1';
-	WAIT FOR 20000 ps;
-	datain(2) <= '0';
-	WAIT FOR 24000 ps;
-	datain(2) <= '1';
-	WAIT FOR 24000 ps;
+	WAIT FOR 32000 ps;
 	datain(2) <= '0';
 	WAIT FOR 12000 ps;
 	datain(2) <= '1';
-	WAIT FOR 12000 ps;
+	WAIT FOR 24000 ps;
 	datain(2) <= '0';
 WAIT;
 END PROCESS t_prcs_datain_2;
@@ -213,13 +205,17 @@ END PROCESS t_prcs_datain_2;
 t_prcs_datain_1: PROCESS
 BEGIN
 	datain(1) <= '0';
-	WAIT FOR 58000 ps;
+	WAIT FOR 38000 ps;
 	datain(1) <= '1';
-	WAIT FOR 36000 ps;
+	WAIT FOR 20000 ps;
 	datain(1) <= '0';
 	WAIT FOR 12000 ps;
 	datain(1) <= '1';
+	WAIT FOR 24000 ps;
+	datain(1) <= '0';
 	WAIT FOR 12000 ps;
+	datain(1) <= '1';
+	WAIT FOR 24000 ps;
 	datain(1) <= '0';
 WAIT;
 END PROCESS t_prcs_datain_1;
@@ -227,9 +223,17 @@ END PROCESS t_prcs_datain_1;
 t_prcs_datain_0: PROCESS
 BEGIN
 	datain(0) <= '0';
-	WAIT FOR 82000 ps;
+	WAIT FOR 38000 ps;
 	datain(0) <= '1';
-	WAIT FOR 60000 ps;
+	WAIT FOR 20000 ps;
+	datain(0) <= '0';
+	WAIT FOR 24000 ps;
+	datain(0) <= '1';
+	WAIT FOR 36000 ps;
+	datain(0) <= '0';
+	WAIT FOR 12000 ps;
+	datain(0) <= '1';
+	WAIT FOR 12000 ps;
 	datain(0) <= '0';
 WAIT;
 END PROCESS t_prcs_datain_0;

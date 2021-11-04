@@ -38,10 +38,15 @@ begin
 
 		if (clock'event and clock = '1') then
 			-- en el estado de llenado de datos
-			if (wrinit = '1' and control = "001") then 
+			if (control = "000") then 
+				-- reset en 0
+				dataout <= "0000";
+				
+			elsif (wrinit = '1' and control = "001") then 
 				-- radd 000 -> 111
 				R(raddi) <= datain;
-
+				dataout <= datain;
+				
 			-- inicia ordenamiento
 			elsif (control = "100") then 
 				-- inicio de algoritmo
@@ -49,10 +54,12 @@ begin
 					R(cj)<=R(ci);
 					R(ci)<=R8;
 				end if;
+				dataout <= "0000";
+				
 			elsif (control = "111") then 
 				dataout <= R(raddi);
 			end if;
-
+			
 		end if;
 	end process;
 end behav;
