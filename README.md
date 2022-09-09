@@ -11,4 +11,5 @@ La arquitectura que se utilizó para el diseño toma en cuenta un controlador y
 un datapath para realizar el ordenamiento de los datos como tal.
 
 Las simulaciones realizadas fueron hechas sobre una FPGA
+
 ![Simulación](/image/simulation.png "Simulado en una FPGA")
