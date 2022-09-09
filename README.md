@@ -1,15 +1,14 @@
-# Sort-Lab
-
-Este repositorio es un diseño de VHDL para ordenamiento de datos
+# Sort algorithm using FSM and Bubble algorithm
+ 
+This repository shows the implementation of a number ordering algorithm on an FPGA using VHDL.
 
 ## Se hizo uso de
 
-- Registros de 4 bits.
-- Una máquina de estados para el controlador.
+- 4 bit registers.
+- The design of a state machine for the controller.
 
-La arquitectura que se utilizó para el diseño toma en cuenta un controlador y
-un datapath para realizar el ordenamiento de los datos como tal.
+The architecture used for the design takes into account a controller and a datapath to order the data as such.
 
-Las simulaciones realizadas fueron hechas sobre una FPGA
+The simulations carried out were made on an FPGA, below is an image with the FPGA used.
 
 ![Simulación](/image/simulation.png "Simulado en una FPGA")
