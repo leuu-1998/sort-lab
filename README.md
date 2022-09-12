@@ -1,4 +1,4 @@
-# Sort algorithm using FSM and Bubble algorithm
+# Implementation of the bubble sort algorithm in an FPGA using VHDL
 
 This repository shows the implementation of a number ordering algorithm on an FPGA using VHDL.
 
