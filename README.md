@@ -4,8 +4,8 @@ This repository shows the implementation of a number ordering algorithm on an FP
 
 ## Use was made of
 
-- 4 bit registers.
-- The design of a state machine for the controller.
+- The numbers will be 4 bits, in total 8 numbers will be entered that will be stored in registers with 4 bits of capacity. The smallest value will be in R0 and the largest value in R7.
+- We will use two modules, the first one is datapath.vhd and the second one will be controller.vhd.
 
 ## How works
 
