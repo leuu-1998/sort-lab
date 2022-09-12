@@ -30,11 +30,23 @@ The controller is a Moore type state machine, with 6 states, for the interaction
 - State S4(control “100”): i,j and control are sent to order the data in the datapath. Then the value of j is increased by one (cj_n <= cj + 1). Finally, if j is 7 (cj=6) it goes to state S5, otherwise it stays in S4 to increase j.
 - State S5(control “100”): When j is 7, i is increased by one (ci_n<=ci + 1). If i is equal to 6 then it goes to state S7, otherwise it goes to state S2.
 - S7 Status(control is “111”): Indicates the end of the ordering by showing done = “1”.
+
 ![image](https://user-images.githubusercontent.com/63620889/189762867-771876d6-8175-4263-baef-71bae98c5166.png)
 
+## Funcional Test
+
+Now we proceed to enter the data for future ordering.
+
+![image](https://user-images.githubusercontent.com/63620889/189764259-3ca03747-5f62-48da-8f99-d9c121d0a26f.png) 
+
+As can be seen in the Figure of the simulation (after executing the ordering algorithm) we can see how the numbers are displayed and we also see that they are ordered in the way in which it is requested, with the smallest number being in the register R0 and the largest in register R7.
+
+![image](https://user-images.githubusercontent.com/63620889/189764282-16435f5a-9557-4f41-8fb1-a719173d0924.png)
 
 
 
-The simulations carried out were made on an FPGA, below is an image with the FPGA used.
+
+
+The simulations carried out were made on an FPGA (Terasic DE1-SoC), below is an image with the FPGA used.
 
 ![Simulación](/image/simulation.png "Simulado en una FPGA")
