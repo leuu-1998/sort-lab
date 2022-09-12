@@ -1,8 +1,8 @@
 # Sort algorithm using FSM and Bubble algorithm
- 
+
 This repository shows the implementation of a number ordering algorithm on an FPGA using VHDL.
 
-## Se hizo uso de
+## Use was made of
 
 - 4 bit registers.
 - The design of a state machine for the controller.
